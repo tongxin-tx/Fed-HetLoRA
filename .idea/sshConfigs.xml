@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="a6000.lmzgc.cn" id="090dc058-1ea7-446d-8c8a-76cf6efddd9e" keyPath="D:\id_rsa" port="8201" nameFormat="DESCRIPTIVE" username="jinni" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="10.112.248.205" id="d904e7e7-94c3-4fb2-8f53-f3fe6f15786f" port="22" nameFormat="DESCRIPTIVE" username="dell" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
