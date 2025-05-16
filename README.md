@@ -1,6 +1,17 @@
+#  Fed-HetLoRA: A Federated Heterogeneous LoRA Fine-Tuning method for Large Language Models
+
+**Fed-HetLoRA** is an open source research codebase for training Large Language Models (LLMs) through federated learning, supporting heterogeneous LoRA training.
+
+![framework](FL-LoRA.pdf)
+
+## Requirements
+pip install -r requirements.txt
+
 The training script is in `training_scripts/run_sft.sh`.
-### Instruction Tuning
-heterogeneous
+## Federated Instruction Tuning
+
+### Heterogeneous
+
 ```
 CUDA_VISIBLE_DEVICES=1 heterogeneous_Instruction_tuning.py \
  --model_name_or_path "meta-llama/Llama-3.2-3B" \
@@ -22,7 +33,8 @@ CUDA_VISIBLE_DEVICES=1 heterogeneous_Instruction_tuning.py \
  --template "alpaca" \
 ```
 
-homogenous
+### Homogenous
+
 ```
 CUDA_VISIBLE_DEVICES=1 homogenous_Instruction_tuning.py \
  --model_name_or_path "meta-llama/Llama-3.2-3B" \
@@ -43,8 +55,11 @@ CUDA_VISIBLE_DEVICES=1 homogenous_Instruction_tuning.py \
  --output_dir "./output" \
  --template "alpaca" \
 ```
-### Classification
-heterogeneous
+
+## Federated Classification
+
+### Heterogeneous
+
 ```
 CUDA_VISIBLE_DEVICES=1 heterogeneous_classification.py \
  --model_name_or_path "meta-llama/Llama-3.2-3B" \
@@ -66,7 +81,8 @@ CUDA_VISIBLE_DEVICES=1 heterogeneous_classification.py \
  --template "alpaca" \
 ```
 
-homogenous
+### Homogenous
+
 ```
 CUDA_VISIBLE_DEVICES=1 homogenous_classification.py \
  --model_name_or_path "meta-llama/Llama-3.2-3B" \
@@ -87,3 +103,5 @@ CUDA_VISIBLE_DEVICES=1 homogenous_classification.py \
  --output_dir "./output" \
  --template "alpaca" \
 ```
+
+
